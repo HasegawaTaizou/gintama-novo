@@ -1,0 +1,136 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  color: white;
+}
+
+header {
+  height: 150px;
+  padding-left: 56px;
+  padding-right: 56px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: white;
+}
+
+.navigation-container {
+  display: flex;
+  gap: 32px;
+}
+
+.banner {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/background-image.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.banner__title {
+  font-size: 8rem;
+}
+
+.quote-container {
+  max-width: 1000px;
+  display: grid;
+  justify-items: center;
+  gap: 32px;
+}
+
+.quote {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-align: center;
+}
+
+.quote::before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #fedc00;
+  width: 85px;
+  margin: 8px auto 20px auto;
+}
+
+.quote::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #fedc00;
+  width: 85px;
+  margin: 20px auto 8px auto;
+}
+
+.quote__button {
+  width: 224px;
+  height: 64px;
+  background-color: transparent;
+  border: 4px solid black;
+  color: white;
+}
+
+.about {
+  background-color: #353535;
+  height: 100vh;
+}
+
+.about__title {
+  display: flex;
+  justify-content: center;
+}
+
+.about__content {
+  display: grid;
+  grid-template-areas: "history-and-opinion categories";
+  grid-template-columns: 1fr 1fr;
+}
+
+.history-and-opinion-container {
+  display: grid;
+  justify-items: center;
+}
+
+.history-and-opinion__text {
+  max-width: 530px;
+  text-align: center;
+}
+
+.categories-container {
+  display: grid;
+  justify-items: center;
+}
+
+.categories {
+  display: flex;
+  gap: 32px;
+}
+
+.category__title {
+  background-color: #000;
+  width: 150px;
+  height: 50px;
+}
+
+.category__image {
+  background-color: #1e1e1e;
+  width: 150px;
+  height: 100px;
+}
+
+footer {
+  grid-area: content;
+}
