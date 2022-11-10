@@ -4,8 +4,6 @@ html {
 
 body {
   font-family: "Nesans", Courier, monospace;
-  color: var(--primary-color);
-  background-color: var(--background-color);
   color: white;
 }
 
@@ -27,13 +25,14 @@ a {
   display: flex;
   gap: 32px;
   font-family: "Airthan", Courier, monospace;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .navigation {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+  font-family: 'Abel', sans-serif;
 }
 
 .banner {
@@ -46,6 +45,7 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 64px;
+  box-shadow: inset 0px -20px 20px #353535;
 }
 
 .banner__title {
@@ -58,6 +58,7 @@ a {
   display: grid;
   justify-items: center;
   gap: 32px;
+  font-size: 2rem;
 }
 
 .banner-quote {
@@ -66,6 +67,8 @@ a {
   flex-direction: column;
   justify-self: center;
   text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em
+
 }
 
 .banner-quote::before {
@@ -84,12 +87,17 @@ a {
   margin: 20px auto 8px auto;
 }
 
+.banner-quote__author {
+  font-size: 2.5rem;
+}
+
 .banner-quote__button {
   width: 224px;
   height: 64px;
   background-color: transparent;
   border: 4px solid black;
   color: white;
+  font-size: 1.5rem;
 }
 
 .about {
@@ -101,9 +109,9 @@ a {
 }
 
 .about__title {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
+  display: grid;
+  justify-items: center;
+  font-size: 3rem;
 }
 
 .about__title::after {
@@ -129,17 +137,23 @@ a {
   justify-items: center;
 }
 
+.history-and-opinion__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 .history-and-opinion__title::after {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
   margin: 10px auto 8px auto;
 }
 
 .history-and-opinion__text {
   max-width: 530px;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .categories-container {
@@ -153,11 +167,16 @@ a {
   gap: 32px;
 }
 
+.categories__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 .categories__title::after {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
   margin: 10px auto 8px auto;
 }
 
@@ -168,6 +187,10 @@ a {
   background-color: #000;
   width: 150px;
   height: 50px;
+}
+
+.category__title {
+  font-size: 1.5rem;
 }
 
 .image {
@@ -189,7 +212,8 @@ a {
 }
 
 .images__title {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
+  font-size: 3rem;
 }
 
 .images__title::after {
@@ -217,6 +241,7 @@ a {
 }
 
 .characters__title {
+  font-size: 3rem;
   margin-bottom: 40px;
 }
 
@@ -238,13 +263,14 @@ a {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 .character__name::after {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
   margin: 10px auto 8px auto;
 }
 
@@ -259,6 +285,10 @@ a {
   align-items: center;
   padding: 50px 0px;
   background-color: #262626;
+}
+
+.hasegawa__title {
+  font-size: 3rem;
 }
 
 .hasegawa__title::after {
@@ -288,21 +318,22 @@ a {
 .hasegawa__text {
   max-width: 1000px;
   text-align: center;
+  font-size: 1.75rem;
 }
 
 .hasegawa__text:first-child::before {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
   margin: 8px auto 20px auto;
 }
 
 .hasegawa__text:first-child::after {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
   margin: 20px auto 8px auto;
 }
 
@@ -315,6 +346,7 @@ a {
 }
 
 .quotes__title {
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -341,23 +373,24 @@ a {
   text-align: center;
 }
 
-.quote__text::before {
+/* .quote__text::before {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
   margin: 8px auto 20px auto;
-}
+} */
 
 .quote__text::after {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
-  margin: 20px auto 8px auto;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
+  margin: 10px auto 8px auto;
 }
 
 .quote__author {
+  font-size: 1.5rem;
   margin-top: 20px;
   text-align: center;
 }
@@ -371,6 +404,7 @@ a {
 }
 
 .informations__title {
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
@@ -389,18 +423,24 @@ a {
 
 .topic__title {
   margin-bottom: 25px;
+  font-size: 1.5rem;
 }
 
 .topic__title::after {
   content: "";
   display: block;
-  border-bottom: 4px solid #fedc00;
-  width: 85px;
-  margin: 20px auto 8px 0px;
+  border-bottom: 2px solid #fedc00;
+  width: 35px;
+  margin: 10px auto 8px 0px;
 }
 
 .topic__text {
   max-width: 280px;
+  font-size: 1.25rem;
+}
+
+.topic-contact-container .topic__text {
+  line-height: 32px;
 }
 
 .social-networks-container {
