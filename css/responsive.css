@@ -1,0 +1,272 @@
+/* DESKTOP */
+@media (max-width: 1500px) {
+  .character__image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .navigation-container {
+    gap: 16px;
+  }
+
+  .images__image {
+    width: 330px;
+    width: 330px;
+  }
+
+  .hasegawa__image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .characters-container {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .images__image {
+    width: 280px;
+    width: 280px;
+  }
+
+  .hasegawa__image {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1130px) {
+  header {
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+  }
+
+  #header__logo {
+    display: none;
+  }
+
+  .navigation-container {
+    gap: 32px;
+  }
+
+  .about {
+    grid-template-areas:
+      "title"
+      "content";
+    grid-template-rows: auto 1fr;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about__title {
+    grid-area: title;
+  }
+
+  .about__content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas:
+      "history-and-opinion"
+      "categories";
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .images__images {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .images__image {
+    width: 800px;
+    height: 520px;
+  }
+
+  .characters-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .character__image {
+    width: 450px;
+    height: 450px;
+  }
+
+  .character__text {
+    max-width: 700px;
+    font-size: 1.5rem;
+  }
+
+  .hasegawa {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "about"
+      "images";
+    justify-items: center;
+    align-items: center;
+    /* padding: 50px 0px; */
+  }
+
+  .hasegawa__title {
+    grid-area: title;
+  }
+
+  .hasegawa__about {
+    grid-area: about;
+  }
+
+  .hasegawa__images {
+    grid-area: images;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hasegawa__image {
+    width: 800px;
+    height: 520px;
+  }
+
+  .quotes__title {
+    margin-bottom: 30px;
+  }
+
+  .quotes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .quote {
+    max-width: 400px;
+  }
+
+  .quote__text {
+    font-size: 1.75rem;
+  }
+
+  .quote__author {
+    font-size: 2.25rem;
+  }
+
+  .informations {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "content";
+  }
+
+  .informations__title {
+    grid-area: title;
+  }
+
+  .topics-container {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .topic-why-gintama {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+
+  .topic-contact {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topic-watch {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .social-networks-container {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+    justify-content: end;
+  }
+
+  .topic-contact-container .topic__text {
+    text-align: end;
+  }
+
+  .topic-contact .topic__title {
+    display: grid;
+    justify-content: end;
+  }
+
+  .topic-contact .topic__title::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #fedc00;
+    width: 35px;
+    margin: 10px 0px 8px auto;
+  }
+
+  .topic-social-networks .topic__title {
+    display: grid;
+    justify-content: end;
+  }
+
+  .topic-social-networks .topic__title::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #fedc00;
+    width: 35px;
+    margin: 10px 0px 8px auto;
+  }
+}
+
+@media (max-width: 1110px) {
+  .navigation-container {
+    gap: 16px;
+  }
+
+  .banner__title {
+    font-size: 6rem;
+  }
+
+  .images__image {
+    width: 600px;
+    height: 400px;
+  }
+
+  .hasegawa__title {
+    font-size: 2.25rem;
+  }
+
+  .hasegawa__text {
+    font-size: 1.5rem;
+  }
+
+  .hasegawa__image {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation-container {
+    gap: 8px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+}
