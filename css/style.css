@@ -29,8 +29,29 @@ a {
   color: white;
 }
 
+#return {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  display: grid;
+  place-content: center;
+  font-size: 2.5rem;
+  border: 1px solid #fedc00;
+  padding: 5px;
+}
+
+#return:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-radius: 20%;
+}
+
 section {
   width: 100%;
+}
+
+#header__logo:hover {
+  cursor: pointer;
 }
 
 .navigation-container {
@@ -41,10 +62,15 @@ section {
 }
 
 .navigation {
-  background-color: black;
   padding: 10px;
   border-radius: 10px;
   font-family: "Abel", sans-serif;
+}
+
+.navigation:hover {
+  background-color: #000;
+  color: #fedc00;
+  transition: all 0.5s;
 }
 
 #icon-menu {
@@ -60,12 +86,19 @@ section {
   align-items: center;
   flex-direction: column;
   gap: 64px;
-  box-shadow: inset 0px -20px 20px #353535;
+  box-shadow: inset 0px -40px 20px #353535;
+  padding-bottom: 80px;
 }
 
 .banner__title {
   font-size: 8rem;
-  font-family: "ka1", Courier, monospace;
+  font-family: "Rampart One", cursive;
+}
+
+.banner__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-radius: 20%;
 }
 
 .banner-quote-container-shinpachi {
@@ -110,12 +143,20 @@ section {
 }
 
 .banner-quote__button {
+  font-family: "Abel", sans-serif;
+  font-size: 1.5rem;
+  color: white;
   width: 224px;
   height: 64px;
   background-color: transparent;
   border: 4px solid black;
-  color: white;
-  font-size: 1.5rem;
+}
+
+.banner-quote__button:hover {
+  cursor: pointer;
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
 }
 
 .about {
@@ -130,6 +171,12 @@ section {
   display: grid;
   justify-items: center;
   font-size: 3rem;
+}
+
+.about__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
 }
 
 .about__title::after {
@@ -234,6 +281,12 @@ section {
   font-size: 3rem;
 }
 
+.images__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
+}
+
 .images__title::after {
   content: "";
   display: block;
@@ -263,6 +316,12 @@ section {
   margin-bottom: 40px;
 }
 
+.characters__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
+}
+
 .characters__title::after {
   content: "";
   display: block;
@@ -283,6 +342,10 @@ section {
   align-items: center;
 }
 
+.character:hover {
+  cursor: pointer;
+}
+
 .character__name {
   text-align: center;
   margin-top: 20px;
@@ -301,6 +364,7 @@ section {
 .character__text {
   max-width: 300px;
   text-align: center;
+  display: none;
 }
 
 .hasegawa {
@@ -320,7 +384,27 @@ section {
   font-size: 3rem;
 }
 
-.hasegawa__title::after {
+.hasegawa-mobile__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
+}
+
+.hasegawa-no-mobile__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
+}
+
+.hasegawa-no-mobile__title::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #fedc00;
+  width: 85px;
+  margin: 10px auto 8px auto;
+}
+
+.hasegawa-mobile__title::after {
   content: "";
   display: block;
   border-bottom: 4px solid #fedc00;
@@ -384,6 +468,12 @@ section {
   margin-bottom: 20px;
 }
 
+.quotes__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
+}
+
 .quotes__title::after {
   content: "";
   display: block;
@@ -401,6 +491,10 @@ section {
 
 .quote {
   max-width: 260px;
+}
+
+.quote:nth-child(3) {
+  display: none;
 }
 
 .quote__text {
@@ -434,6 +528,12 @@ section {
   margin-bottom: 30px;
 }
 
+.informations__title:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
+}
+
 .informations__title::after {
   content: "";
   display: block;
@@ -465,6 +565,16 @@ section {
   font-size: 1.25rem;
 }
 
+.topic-watch__content {
+  display: grid;
+  gap: 12px;
+  font-size: 1.25rem;
+}
+
+.topic-watch__link {
+  text-decoration: underline;
+}
+
 .topic-contact-container .topic__text {
   line-height: 32px;
 }
@@ -489,6 +599,12 @@ footer {
   align-items: center;
   height: 80px;
   background-color: #000;
+}
+
+.copyright__text:hover {
+  color: #fedc00;
+  transition: all 0.5s;
+  border-color: #fedc00;
 }
 
 @font-face {

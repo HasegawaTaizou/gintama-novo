@@ -348,6 +348,14 @@
     height: 320px;
   }
 
+  .quote:nth-child(2) {
+    display: none;
+  }
+
+  .quote:nth-child(3) {
+    display: block;
+  }
+
   .topics-container {
     display: flex;
     flex-direction: column;

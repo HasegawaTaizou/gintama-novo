@@ -9,10 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/c0e5486155.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -20,21 +25,26 @@
   </head>
   <body>
     <header>
-      <img id="header__logo" src="./img/logo-gintama.png" alt="Gintama Logo" />
+      <a href="./index.html"
+        ><img id="header__logo" src="./img/logo-gintama.png" alt="Gintama Logo"
+      /></a>
       <nav>
         <ul class="navigation-container">
-          <li><a href="#" class="navigation">Sobre</a></li>
-          <li><a href="#" class="navigation">Imagens</a></li>
-          <li><a href="#" class="navigation">Personagens</a></li>
-          <li><a href="#" class="navigation">Hasegawa</a></li>
-          <li><a href="#" class="navigation">Informações</a></li>
-          <li><a href="#" class="navigation">Citações</a></li>
-          <li><a href="#" class="navigation">Copyright</a></li>
+          <li><a href="#about" class="navigation">Sobre</a></li>
+          <li><a href="#section-images" class="navigation">Imagens</a></li>
+          <li><a href="#characters" class="navigation">Personagens</a></li>
+          <li><a href="#hasegawa" class="navigation">Hasegawa</a></li>
+          <li><a href="#quotes" class="navigation">Citações</a></li>
+          <li><a href="#informations" class="navigation">Informações</a></li>
+          <li><a href="#copyright" class="navigation">Copyright</a></li>
         </ul>
       </nav>
       <i id="icon-menu" class="fas fa-bars"></i>
     </header>
     <main>
+      <a href="#" id="return">
+        <i class="fas fa-arrow-up"></i>
+      </a>
       <section id="banner" class="banner">
         <h1 class="banner__title">GINTAMA 銀魂</h1>
         <div class="banner-quote-container-shinpachi">
@@ -47,14 +57,18 @@
             aguentam toda a dor e a tristeza enquanto riem com todo mundo.”
           </p>
           <p class="banner-quote__author">Shinpachi</p>
-          <button class="banner-quote__button">CITAÇÕES</button>
+          <a href="#quotes"
+            ><button class="banner-quote__button">CITAÇÕES</button></a
+          >
         </div>
         <div class="banner-quote-container-gintoki">
           <p class="banner-quote">
             “Se você começar a falar do passado, todos parecerão criminosos!”
           </p>
           <p class="banner-quote__author">Gintoki</p>
-          <button class="banner-quote__button">CITAÇÕES</button>
+          <button class="banner-quote__button">
+            <a href="#quotes">CITAÇÕES</a>
+          </button>
         </div>
       </section>
       <section id="about" class="about">
@@ -159,16 +173,16 @@
       <section id="characters" class="characters">
         <h2 class="characters__title">PERSONAGENS PRINCIPAIS</h2>
         <ul class="characters-container">
-          <li class="character">
+          <li onclick="changeState('gintoki')" class="character">
             <img
               src="./img/character-gintoki.png"
               alt="Character Gintoki"
               class="character__image"
             />
             <p class="character__name">Gintoki Sakata</p>
-            <p class="character__text">
+            <p id="gintoki" class="character__text">
               É o personagem principal da história. Ele é um samurai. Apesar da
-              proibição de usar sabre, ele ainda carrega um sabre de madeira ,
+              proibição de usar sabre, ele ainda carrega um sabre de madeira,
               que disse ter comprado durante uma excursão ao Lago Toyako. Ele é
               o chefe da “Agência Freelance do Sr. Gin”, junto com Kagura e
               Shinpachi, ele aceita todos os serviços desde que seja pago.
@@ -177,40 +191,30 @@
               a falar trivialidades e falar bobagens muito sérias são suas
               características mais visíveis. Ele usa cabelos ondulados com
               permanente que, segundo ele, são atribuídos à falta de amor ou a
-              uma maldição. Ele sempre usa seu yukata pela metade. Ele tem sua
-              licença e dirige regularmente uma Vespa . Ele também é um dos
-              poucos personagens de mangá a sofrer de açúcar elevado no sangue,
-              novamente de acordo com suas próprias palavras. Ele adora
-              chocolate parfaits e beber leite com morango. Ele é um grande fã
-              do apresentador do clima, Ketsuno Ana. Sempre sem dinheiro, muitas
-              vezes lhe acontece passar horas nos quartos de Pachinko. Apesar de
-              trabalhar muito, ele ainda está dois meses atrasado no aluguel
-              porque precisa alimentar Kagura e Sadaharu. Gintoki Sakata é um
-              samurai que pode ser reconhecido por seu cabelo naturalmente
-              cacheado.
+              uma maldição.
             </p>
           </li>
-          <li class="character">
+          <li onclick="changeState('sadaharu')" class="character">
             <img
               src="./img/character-sadaharu.png"
               alt="Character Sadaharu"
               class="character__image"
             />
             <p class="character__name">Sadaharu</p>
-            <p class="character__text">
+            <p id="sadaharu" class="character__text">
               É um cão gigante adotado por Kagura em quem ela encontrou um
               companheiro adequado para sua força (e que na verdade se tornará
               um deus, um inugami).
             </p>
           </li>
-          <li class="character">
+          <li onclick="changeState('kagura')" class="character">
             <img
               src="./img/character-kagura.png"
               alt="Character Kagura"
               class="character__image"
             />
             <p class="character__name">Kagura</p>
-            <p class="character__text">
+            <p id="kagura" class="character__text">
               Kagura é um alienígena pertencente à espécie Yato. Apesar de sua
               aparência de menina, ela obtém força sobre-humana de suas origens.
               Munida de sua força, um guarda-chuva blindado que também serve de
@@ -223,14 +227,14 @@
               Shinsengumi.
             </p>
           </li>
-          <li class="character">
+          <li onclick="changeState('shinpachi')" class="character">
             <img
               src="./img/character-shinpachi.png"
               alt="Character Shinpachi Shimura"
               class="character__image"
             />
             <p class="character__name">Shinpachi Shimura</p>
-            <p class="character__text">
+            <p id="shinpachi" class="character__text">
               Shinpachi Shimura é um jovem de dezesseis anos que trabalha com
               sua irmã no dojo de seu falecido pai, abandonado desde a proibição
               de portar uma espada. Ele conhece Gintoki no início da história e
@@ -319,6 +323,17 @@
           </li>
           <li class="quote">
             <p class="quote__text">
+              “Lágrimas são úteis para lavar os problemas e os sentimentos
+              tristes. Mas, quando você cresce, você aprende que existem coisas
+              tão tristes que nunca poderão ser lavadas pelas lágrimas. Que
+              existem lembranças dolorosas que nunca devem ser lavadas. Então as
+              pessoas que são realmente fortes riem quando querem chorar. Elas
+              aguentam toda a dor e a tristeza enquanto riem com todo mundo.”
+            </p>
+            <p class="quote__author">Gintoki</p>
+          </li>
+          <li class="quote">
+            <p class="quote__text">
               "Eu não conheço esses números! Um homem só precisa conhecer o
               número um para se dar bem nesse mundo.”
             </p>
@@ -380,26 +395,36 @@
           <div class="topic-social-networks">
             <h3 class="topic__title">REDES SOCIAIS</h3>
             <ul class="social-networks-container">
-              <li class="social-network">
-                <img src="./img/instagram.png" alt="Instagram" />
-              </li>
-              <li class="social-network">
-                <img src="./img/facebook.png" alt="Facebook" />
-              </li>
-              <li class="social-network">
-                <img src="./img/twitter.png" alt="Twitter" />
-              </li>
-              <li class="social-network">
-                <img src="./img/linkedin.png" alt="Linkedin" />
-              </li>
+              <a href="https://www.instagram.com/">
+                <li class="social-network">
+                  <img src="./img/instagram.png" alt="Instagram" />
+                </li>
+              </a>
+              <a href="https://facebook.com/">
+                <li class="social-network">
+                  <img src="./img/facebook.png" alt="Facebook" />
+                </li>
+              </a>
+              <a href="https://twitter.com/">
+                <li class="social-network">
+                  <img src="./img/twitter.png" alt="Twitter" />
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <li class="social-network">
+                  <img src="./img/linkedin.png" alt="Linkedin" />
+                </li>
+              </a>
             </ul>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      Copyright ©️ | Todos os Direitos Reservados 2022 | Desenvolvido por Caio
-      Palermo Lemos
+    <footer id="copyright">
+      <p class="copyright__text">
+        Copyright ©️ | Todos os Direitos Reservados 2022 | Desenvolvido por Caio
+        Palermo Lemos
+      </p>
     </footer>
   </body>
 </html>
