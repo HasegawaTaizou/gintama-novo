@@ -277,6 +277,12 @@ section {
   gap: 86px;
 }
 
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .character__name {
   text-align: center;
   margin-top: 20px;
@@ -401,14 +407,6 @@ section {
   text-align: center;
 }
 
-/* .quote__text::before {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #fedc00;
-  width: 35px;
-  margin: 8px auto 20px auto;
-} */
-
 .quote__text::after {
   content: "";
   display: block;
@@ -485,7 +483,6 @@ section {
 }
 
 footer {
-  /* max-width: 1600px; */
   width: 100%;
   display: grid;
   place-content: center;
