@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="./css/quotes/quotes-style.css" />
     <link rel="stylesheet" href="./css/informations/informations-style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/slider/slider-hasegawa-style.css" />
+    <link rel="stylesheet" href="./css/slider/slider-images-style.css" />
     <title>Gintama</title>
   </head>
   <body>
@@ -137,50 +139,33 @@
       </section>
       <section id="section-images" class="section-images">
         <h2 class="images__title">IMAGENS</h2>
-        <ul class="images__images">
-          <li>
-            <img
-              class="images__image"
-              src="./img/images-gintama1.png"
-              alt="Images Gintama 1"
-            />
-          </li>
-          <li>
-            <img
-              class="images__image"
-              src="./img/images-gintama2.png"
-              alt="Images Gintama 2"
-            />
-          </li>
-          <li>
-            <img
-              class="images__image"
-              src="./img/images-gintama3.png"
-              alt="Images Gintama 3"
-            />
-          </li>
-          <li>
-            <img
-              class="images__image"
-              src="./img/images-gintama4.png"
-              alt="Images Gintama 4"
-            />
-          </li>
-          <li>
-            <img
-              class="images__image"
-              src="./img/images-gintama5.png"
-              alt="Images Gintama 5"
-            />
-          </li>
-          <li>
-            <img
-              class="images__image"
-              src="./img/images-gintama6.png"
-              alt="Images Gintama 6"
-            />
-          </li>
-        </ul>
+        <div class="slideshow-container">
+          <div class="mySlides-images fade">
+            <img src="./img/images-gintama2.png" />
+          </div>
+          <div class="mySlides-images fade">
+            <img src="./img/images-gintama3.png" />
+          </div>
+          <div class="mySlides-images fade">
+            <img src="./img/images-gintama4.png" />
+          </div>
+          <div class="mySlides-images fade">
+            <img src="./img/images-gintama5.png" />
+          </div>
+          <div class="mySlides-images fade">
+            <img src="./img/images-gintama6.png" />
+          </div>
+        </div>
+        <br />
+
+        <div class="dots">
+          <span class="dot-images"></span>
+          <span class="dot-images"></span>
+          <span class="dot-images"></span>
+          <span class="dot-images"></span>
+          <span class="dot-images"></span>
+          <span class="dot-images"></span>
+        </div>
       </section>
       <section id="characters" class="characters">
         <h2 class="characters__title">PERSONAGENS PRINCIPAIS</h2>
@@ -270,36 +255,31 @@
         <h2 class="hasegawa-mobile__title">
           HASEGAWA TAIZOU <span>&#10084;</span>
         </h2>
-        <ul class="hasegawa__images">
-          <li>
-            <img
-              class="hasegawa__image"
-              src="./img/hasegawa1.png"
-              alt="Hasegawa 1"
-            />
-          </li>
-          <li>
-            <img
-              class="hasegawa__image"
-              src="./img/hasegawa2.png"
-              alt="Hasegawa 2"
-            />
-          </li>
-          <li>
-            <img
-              class="hasegawa__image"
-              src="./img/hasegawa3.png"
-              alt="Hasegawa 3"
-            />
-          </li>
-          <li>
-            <img
-              class="hasegawa__image"
-              src="./img/hasegawa4.png"
-              alt="Hasegawa 4"
-            />
-          </li>
-        </ul>
+        <div class="slideshow-container">
+          <div class="mySlides-hasegawa fade">
+            <img src="./img/hasegawa1.png" />
+          </div>
+
+          <div class="mySlides-hasegawa fade">
+            <img src="img/hasegawa2.png" />
+          </div>
+
+          <div class="mySlides-hasegawa fade">
+            <img src="img/hasegawa3.png" />
+          </div>
+
+          <div class="mySlides-hasegawa fade">
+            <img src="img/hasegawa4.png" />
+          </div>
+        </div>
+        <br />
+
+        <div class="dots">
+          <span class="dot-hasegawa"></span>
+          <span class="dot-hasegawa"></span>
+          <span class="dot-hasegawa"></span>
+          <span class="dot-hasegawa"></span>
+        </div>
         <div class="hasegawa__about">
           <p class="hasegawa__text">
             Apesar de não ser um dos personagens principais, sem dúvidas , o
@@ -438,5 +418,51 @@
         Palermo Lemos
       </p>
     </footer>
+    <script>
+      let slideIndexImages = 0;
+      let slideIndexHasegawa = 0;
+
+      showSlidesImages();
+      showSlidesHasegawa();
+
+      function showSlidesImages() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides-images");
+        let dots = document.getElementsByClassName("dot-images");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndexImages++;
+        if (slideIndexImages > slides.length) {
+          slideIndexImages = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndexImages - 1].style.display = "block";
+        dots[slideIndexImages - 1].className += " active";
+        setTimeout(showSlidesImages, 2000);
+      }
+
+      function showSlidesHasegawa() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides-hasegawa");
+        let dots = document.getElementsByClassName("dot-hasegawa");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndexHasegawa++;
+        if (slideIndexHasegawa > slides.length) {
+          slideIndexHasegawa = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndexHasegawa - 1].style.display = "block";
+        dots[slideIndexHasegawa - 1].className += " active";
+        setTimeout(showSlidesHasegawa, 2000);
+      }
+    </script>
   </body>
 </html>
+<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
