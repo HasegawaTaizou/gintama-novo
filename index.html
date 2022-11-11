@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/c0e5486155.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -28,11 +32,12 @@
           <li><a href="#" class="navigation">Copyright</a></li>
         </ul>
       </nav>
+      <i id="icon-menu" class="fas fa-bars"></i>
     </header>
     <main>
       <section id="banner" class="banner">
         <h1 class="banner__title">GINTAMA 銀魂</h1>
-        <div class="banner-quote-container">
+        <div class="banner-quote-container-shinpachi">
           <p class="banner-quote">
             “Lágrimas são úteis para lavar os problemas e os sentimentos
             tristes. Mas, quando você cresce, você aprende que existem coisas
@@ -42,6 +47,13 @@
             aguentam toda a dor e a tristeza enquanto riem com todo mundo.”
           </p>
           <p class="banner-quote__author">Shinpachi</p>
+          <button class="banner-quote__button">CITAÇÕES</button>
+        </div>
+        <div class="banner-quote-container-gintoki">
+          <p class="banner-quote">
+            “Se você começar a falar do passado, todos parecerão criminosos!”
+          </p>
+          <p class="banner-quote__author">Gintoki</p>
           <button class="banner-quote__button">CITAÇÕES</button>
         </div>
       </section>
@@ -236,8 +248,11 @@
         </ul>
       </section>
       <section id="hasegawa" class="hasegawa">
-        <h2 class="hasegawa__title">
+        <h2 class="hasegawa-no-mobile__title">
           HASEGAWA TAIZOU - MEU PERSONAGEM PREFERIDO <span>&#10084;</span>
+        </h2>
+        <h2 class="hasegawa-mobile__title">
+          HASEGAWA TAIZOU <span>&#10084;</span>
         </h2>
         <ul class="hasegawa__images">
           <li>

@@ -116,7 +116,7 @@
     /* padding: 50px 0px; */
   }
 
-  .hasegawa__title {
+  .hasegawa-no-mobile__title {
     grid-area: title;
   }
 
@@ -247,7 +247,7 @@
     height: 400px;
   }
 
-  .hasegawa__title {
+  .hasegawa-no-mobile__title {
     font-size: 2.25rem;
   }
 
@@ -269,4 +269,269 @@
 
 /* MOBILE */
 @media (max-width: 850px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  #header__logo {
+    display: block;
+    width: 64px;
+    height: 64px;
+  }
+
+  .navigation-container {
+    display: none;
+  }
+
+  #icon-menu {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .banner__title {
+    font-size: 5rem;
+  }
+
+  .banner-quote-container-shinpachi {
+    display: none;
+  }
+
+  .banner-quote-container-gintoki {
+    display: block;
+  }
+
+  .banner-quote-container-gintoki .banner-quote {
+    font-size: 2.25rem;
+  }
+
+  .banner-quote-container-gintoki .banner-quote__author {
+    text-align: center;
+    font-size: 2.75rem;
+  }
+
+  .banner-quote__button {
+    display: none;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images__image {
+    width: 450px;
+    height: 320px;
+  }
+
+  .character__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .character__text {
+    max-width: 300px;
+    font-size: 1.25rem;
+  }
+
+  .hasegawa-no-mobile__title {
+    display: none;
+  }
+
+  .hasegawa-mobile__title {
+    display: block;
+  }
+
+  .hasegawa__image {
+    width: 450px;
+    height: 320px;
+  }
+
+  .topics-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topic-why-gintama {
+    display: grid;
+    justify-items: center;
+  }
+
+  .topic-watch__content {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .topic-contact {
+    display: grid;
+    justify-items: center;
+  }
+
+  .topic-contact .topic__title {
+    display: block;
+  }
+
+  .topic-contact .topic__title::after {
+    margin: 10px auto 8px auto;
+  }
+
+  .topic-contact-container .topic__text {
+    text-align: center;
+  }
+
+  .topic-social-networks .topic__title {
+    display: block;
+    text-align: center;
+  }
+
+  .topic-social-networks .topic__title::after {
+    margin: 10px auto 8px auto;
+  }
+
+  .social-networks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topic__title {
+    display: grid;
+    justify-items: center;
+  }
+
+  .topic__title::after {
+    margin: 10px auto 8px auto;
+  }
+
+  .topic__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .banner__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .banner__title {
+    font-size: 3rem;
+  }
+
+  .images__image {
+    width: 380px;
+  }
+
+  .characters__title {
+    font-size: 2rem;
+  }
+
+  .hasegawa-mobile__title {
+    font-size: 2rem;
+  }
+
+  .hasegawa__image {
+    width: 380px;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .banner__title {
+    font-size: 2.5rem;
+  }
+
+  .images__image {
+    width: 330px;
+    height: 280px;
+  }
+
+  .characters__title {
+    font-size: 2rem;
+  }
+
+  .hasegawa-mobile__title {
+    font-size: 2rem;
+  }
+
+  .hasegawa__image {
+    width: 330px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 370px) {
+  .banner__title {
+    font-size: 2.25rem;
+  }
+
+  .images__image {
+    width: 280px;
+    height: 190px;
+  }
+
+  .characters__title {
+    font-size: 1.75rem;
+  }
+
+  .hasegawa-mobile__title {
+    font-size: 2rem;
+  }
+
+  .hasegawa__image {
+    width: 280px;
+    height: 190px;
+  }
+}
+
+@media (max-width: 340px) {
+  .banner__title {
+    font-size: 2rem;
+  }
+
+  .images__image {
+    width: 250px;
+    height: 150px;
+  }
+
+  .characters__title {
+    font-size: 1.5rem;
+  }
+
+  .character__image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hasegawa-mobile__title {
+    font-size: 1.75rem;
+  }
+
+  .hasegawa__image {
+    width: 250px;
+    height: 150px;
+  }
+
+  .informations__title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    font-size: 0.45rem;
+  }
 }
