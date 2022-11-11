@@ -1,12 +1,16 @@
+.hasegawa .slideshow-container {
+  margin-top: 50px;
+}
+
 .mySlides {
   display: none;
   margin: 20px 0px;
 }
 
-img {
+.mySlides-hasegawa img {
   vertical-align: middle;
-  /* max-width: 600px; */
-  /* max-height: 600px; */
+  width: 600px;
+  max-height: 500px;
 }
 
 .slideshow {
@@ -17,14 +21,15 @@ img {
   width: 100%;
 }
 
-.dots {
-  margin-bottom: 20px;
+.dots-hasegawa {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .dot-hasegawa {
   height: 15px;
   width: 15px;
-  margin: 0 5px;
+  margin: 0 8px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
