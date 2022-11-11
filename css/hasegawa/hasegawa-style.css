@@ -47,18 +47,6 @@
   color: red;
 }
 
-.hasegawa__images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 48px;
-  margin: 40px 0px;
-}
-
-.hasegawa__image {
-  height: 300px;
-  width: 300px;
-}
-
 .hasegawa__about {
   display: grid;
   gap: 24px;
