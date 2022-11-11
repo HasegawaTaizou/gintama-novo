@@ -11,31 +11,9 @@
     gap: 16px;
   }
 
-  /* .images__image {
-    width: 330px;
-    width: 330px;
-  } */
-
-  /* .hasegawa__image {
-    width: 250px;
-    height: 250px;
-  } */
-
   .characters-container {
     gap: 32px;
   }
-}
-
-@media (max-width: 1180px) {
-  /* .images__image {
-    width: 280px;
-    width: 280px;
-  }
-
-  .hasegawa__image {
-    width: 220px;
-    height: 220px;
-  } */
 }
 
 /* TABLET */
@@ -84,11 +62,6 @@
     gap: 32px;
   }
 
-  /* .images__image {
-    width: 800px;
-    height: 520px;
-  } */
-
   .characters-container {
     display: flex;
     flex-direction: column;
@@ -115,7 +88,7 @@
     align-items: center;
   }
 
-  .hasegawa-no-mobile__title {
+  .hasegawa-no-no-mobile__title {
     grid-area: title;
   }
 
@@ -129,11 +102,6 @@
     flex-direction: column;
     gap: 32px;
   }
-
-  /* .hasegawa__image {
-    width: 800px;
-    height: 520px;
-  } */
 
   .quotes__title {
     margin-bottom: 30px;
@@ -237,27 +205,17 @@
     gap: 16px;
   }
 
-  .banner__title {
+  .banner-no-mobile__title {
     font-size: 6rem;
   }
 
-  /* .images__image {
-    width: 600px;
-    height: 400px;
-  } */
-
-  .hasegawa-no-mobile__title {
+  .hasegawa-no-no-mobile__title {
     font-size: 2.25rem;
   }
 
   .hasegawa__text {
     font-size: 1.5rem;
   }
-
-  /* .hasegawa__image {
-    width: 600px;
-    height: 400px;
-  } */
 }
 
 @media (max-width: 900px) {
@@ -290,7 +248,7 @@
     font-size: 3rem;
   }
 
-  .banner__title {
+  .banner-no-mobile__title {
     font-size: 5rem;
   }
 
@@ -320,10 +278,9 @@
     flex-direction: column;
   }
 
-  /* .images__image {
-    width: 450px;
-    height: 320px;
-  } */
+  .section-images img {
+    width: 400px;
+  }
 
   .character__image {
     width: 300px;
@@ -335,18 +292,17 @@
     font-size: 1.25rem;
   }
 
-  .hasegawa-no-mobile__title {
+  .hasegawa-no-no-mobile__title {
     display: none;
   }
 
-  .hasegawa-mobile__title {
+  .hasegawa-no-mobile__title {
     display: block;
   }
 
-  /* .hasegawa__image {
-    width: 450px;
-    height: 320px;
-  } */
+  .hasegawa img {
+    width: 400px;
+  }
 
   .quote:nth-child(2) {
     display: none;
@@ -419,8 +375,14 @@
 }
 
 @media (max-width: 670px) {
-  .banner__title {
-    font-size: 3.5rem;
+  .banner-no-mobile__title {
+    display: none;
+  }
+
+  .banner-mobile__title-container {
+    display: grid;
+    justify-items: center;
+    font-size: 4rem;
   }
 
   .banner-quote {
@@ -447,7 +409,7 @@
 }
 
 @media (max-width: 490px) {
-  .banner__title {
+  .banner-mobile__title-container {
     font-size: 3rem;
   }
 
@@ -459,21 +421,21 @@
     font-size: 1.5rem;
   }
 
-  /* .images__image {
-    width: 380px;
-  } */
+  .section-images img {
+    width: 250px;
+  }
 
   .characters__title {
     font-size: 2rem;
   }
 
-  .hasegawa-mobile__title {
-    font-size: 2rem;
+  .hasegawa img {
+    width: 250px;
   }
 
-  /* .hasegawa__image {
-    width: 380px;
-  } */
+  .hasegawa-no-mobile__title {
+    font-size: 2rem;
+  }
 
   footer {
     font-size: 0.5rem;
@@ -481,10 +443,9 @@
 }
 
 @media (max-width: 420px) {
-  .banner__title {
-    font-size: 2.5rem;
+  .banner-mobile__title-container {
+    font-size: 2rem;
   }
-
   .banner-quote {
     font-size: 0.75rem;
   }
@@ -493,59 +454,26 @@
     font-size: 1rem;
   }
 
-  /* .images__image {
-    width: 330px;
-    height: 280px;
-  } */
-
   .characters__title {
     font-size: 2rem;
   }
 
-  .hasegawa-mobile__title {
+  .hasegawa-no-mobile__title {
     font-size: 2rem;
   }
-
-  /* .hasegawa__image {
-    width: 330px;
-    height: 280px;
-  } */
 }
 
 @media (max-width: 370px) {
-  .banner__title {
-    font-size: 2.25rem;
-  }
-
-  /* .images__image {
-    width: 280px;
-    height: 190px;
-  } */
-
   .characters__title {
     font-size: 1.75rem;
   }
 
-  .hasegawa-mobile__title {
+  .hasegawa-no-mobile__title {
     font-size: 2rem;
   }
-
-  /* .hasegawa__image {
-    width: 280px;
-    height: 190px;
-  } */
 }
 
 @media (max-width: 340px) {
-  .banner__title {
-    font-size: 2rem;
-  }
-
-  /* .images__image {
-    width: 250px;
-    height: 150px;
-  } */
-
   .characters__title {
     font-size: 1.5rem;
   }
@@ -555,14 +483,9 @@
     height: 250px;
   }
 
-  .hasegawa-mobile__title {
+  .hasegawa-no-mobile__title {
     font-size: 1.75rem;
   }
-
-  /* .hasegawa__image {
-    width: 250px;
-    height: 150px;
-  } */
 
   .informations__title {
     font-size: 2.25rem;

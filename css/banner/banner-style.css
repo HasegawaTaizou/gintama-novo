@@ -11,15 +11,21 @@
   padding-bottom: 80px;
 }
 
-.banner__title {
+.banner-no-mobile__title {
   font-size: 8rem;
   font-family: "Rampart One", cursive;
 }
 
-.banner__title:hover {
+.banner-no-mobile__title:hover {
   color: #fedc00;
   transition: all 0.5s;
   border-radius: 20%;
+}
+
+.banner-mobile__title-container {
+  display: none;
+  font-size: 8rem;
+  font-family: "Rampart One", cursive;
 }
 
 .banner-quote-container-shinpachi {
