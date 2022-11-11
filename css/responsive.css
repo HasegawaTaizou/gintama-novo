@@ -4,6 +4,10 @@
     width: 250px;
     height: 250px;
   }
+
+  .quotes-container {
+    margin: 0px 25px;
+  }
 }
 
 @media (max-width: 1380px) {
@@ -11,8 +15,16 @@
     gap: 16px;
   }
 
+  .about__content {
+    padding: 0px 30px;
+  }
+
   .characters-container {
     gap: 32px;
+  }
+
+  .topics-container {
+    margin: 0px 25px;
   }
 }
 
@@ -30,6 +42,11 @@
 
   .navigation-container {
     gap: 32px;
+  }
+
+  .banner-quote-container-shinpachi .banner-quote {
+    font-size: 1.75rem;
+    margin: 0px 25px;
   }
 
   .about {
@@ -88,8 +105,9 @@
     align-items: center;
   }
 
-  .hasegawa-no-no-mobile__title {
+  .hasegawa-no-mobile__title {
     grid-area: title;
+    font-size: 2.75rem;
   }
 
   .hasegawa__about {
@@ -209,12 +227,13 @@
     font-size: 6rem;
   }
 
-  .hasegawa-no-no-mobile__title {
+  .hasegawa-no-mobile__title {
     font-size: 2.25rem;
   }
 
   .hasegawa__text {
     font-size: 1.5rem;
+    margin: 0px 25px;
   }
 }
 
@@ -292,11 +311,11 @@
     font-size: 1.25rem;
   }
 
-  .hasegawa-no-no-mobile__title {
+  .hasegawa-no-mobile__title {
     display: none;
   }
 
-  .hasegawa-no-mobile__title {
+  .hasegawa-mobile__title {
     display: block;
   }
 
@@ -395,8 +414,8 @@
 }
 
 @media (max-width: 600px) {
-  footer {
-    font-size: 0.75rem;
+  .characters__title {
+    font-size: 2rem;
   }
 
   .quote__text {
@@ -405,6 +424,14 @@
 
   .quote__author {
     font-size: 2rem;
+  }
+
+  .history-and-opinion__text {
+    margin: 0px 25px;
+  }
+
+  footer {
+    font-size: 0.75rem;
   }
 }
 
@@ -433,8 +460,12 @@
     width: 250px;
   }
 
-  .hasegawa-no-mobile__title {
+  .hasegawa-mobile__title {
     font-size: 2rem;
+  }
+
+  .quote__text {
+    margin: 0px 25px;
   }
 
   footer {
@@ -443,11 +474,16 @@
 }
 
 @media (max-width: 420px) {
+  #icon-menu {
+    font-size: 2rem;
+  }
+
   .banner-mobile__title-container {
     font-size: 2rem;
   }
   .banner-quote {
     font-size: 0.75rem;
+    margin: 0px 25px;
   }
 
   .banner-quote__author {
@@ -458,7 +494,7 @@
     font-size: 2rem;
   }
 
-  .hasegawa-no-mobile__title {
+  .hasegawa-mobile__title {
     font-size: 2rem;
   }
 }
@@ -468,8 +504,12 @@
     font-size: 1.75rem;
   }
 
-  .hasegawa-no-mobile__title {
-    font-size: 2rem;
+  .history-and-opinion__title {
+    font-size: 1.5rem;
+  }
+
+  .hasegawa-mobile__title {
+    font-size: 1.5rem;
   }
 }
 
@@ -489,6 +529,10 @@
 
   .informations__title {
     font-size: 2.25rem;
+  }
+
+  .topic-why-gintama .topic__text {
+    margin: 0px 25px;
   }
 }
 
