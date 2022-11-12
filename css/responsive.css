@@ -262,7 +262,7 @@
     display: none;
   }
 
-  #icon-menu {
+  #icon-half-menu {
     display: block;
     font-size: 3rem;
   }
@@ -474,7 +474,17 @@
 }
 
 @media (max-width: 420px) {
-  #icon-menu {
+  #header__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  #icon-half-menu {
+    display: none;
+  }
+
+  #icon-full-menu {
+    display: block;
     font-size: 2rem;
   }
 

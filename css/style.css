@@ -52,7 +52,23 @@ section {
   transition: all 0.5s;
 }
 
-#icon-menu {
+#icon-full-menu {
+  display: none;
+}
+
+#icon-half-menu {
+  display: none;
+}
+
+#icon-full-menu:hover {
+  cursor: pointer;
+}
+
+#icon-half-menu:hover {
+  cursor: pointer;
+}
+
+.closebtn {
   display: none;
 }
 
