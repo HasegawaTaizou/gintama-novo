@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/script.js"></script>
+    <script src="./js/social-networks.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/side-nav.js"></script>
     <script src="./js/sign-language.js"></script>
@@ -77,9 +78,11 @@
           <li><a href="#copyright" class="navigation">Copyright</a></li>
         </ul>
         <ul id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            ><i class="fas fa-times"></i
-          ></a>
+          <li>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              ><i class="fas fa-times"></i
+            ></a>
+          </li>
           <li><a href="#about" class="navigation">Sobre</a></li>
           <li><a href="#section-images" class="navigation">Imagens</a></li>
           <li><a href="#characters" class="navigation">Personagens</a></li>
@@ -180,19 +183,22 @@
         <h2 class="images__title">IMAGENS</h2>
         <div class="slideshow-container">
           <div class="mySlides-images fade">
-            <img src="./img/images-gintama2.png" />
+            <img src="./img/images-gintama1.png" alt="Image Gintama 6" />
           </div>
           <div class="mySlides-images fade">
-            <img src="./img/images-gintama3.png" />
+            <img src="./img/images-gintama2.png" alt="Image Gintama 6" />
           </div>
           <div class="mySlides-images fade">
-            <img src="./img/images-gintama4.png" />
+            <img src="./img/images-gintama3.png" alt="Image Gintama 6" />
           </div>
           <div class="mySlides-images fade">
-            <img src="./img/images-gintama5.png" />
+            <img src="./img/images-gintama4.png" alt="Image Gintama 6" />
           </div>
           <div class="mySlides-images fade">
-            <img src="./img/images-gintama6.png" />
+            <img src="./img/images-gintama5.png" alt="Image Gintama 6" />
+          </div>
+          <div class="mySlides-images fade">
+            <img src="./img/images-gintama6.png" alt="Image Gintama 6" />
           </div>
         </div>
         <div class="dots-images">
@@ -294,19 +300,19 @@
         </h2>
         <div class="slideshow-container">
           <div class="mySlides-hasegawa fade">
-            <img src="./img/hasegawa1.png" />
+            <img src="./img/hasegawa1.png" alt="Image Hasegawa 1" />
           </div>
 
           <div class="mySlides-hasegawa fade">
-            <img src="img/hasegawa2.png" />
+            <img src="img/hasegawa2.png" alt="Image Hasegawa 2" />
           </div>
 
           <div class="mySlides-hasegawa fade">
-            <img src="img/hasegawa3.png" />
+            <img src="img/hasegawa3.png" alt="Image Hasegawa 3" />
           </div>
 
           <div class="mySlides-hasegawa fade">
-            <img src="img/hasegawa4.png" />
+            <img src="img/hasegawa4.png" alt="Image Hasegawa 4" />
           </div>
         </div>
         <br />
@@ -424,26 +430,22 @@
           <div class="topic-social-networks">
             <h3 class="topic__title">REDES SOCIAIS</h3>
             <ul class="social-networks-container">
-              <a href="https://www.instagram.com/">
-                <li class="social-network">
-                  <img src="./img/instagram.png" alt="Instagram" />
-                </li>
-              </a>
-              <a href="https://facebook.com/">
-                <li class="social-network">
-                  <img src="./img/facebook.png" alt="Facebook" />
-                </li>
-              </a>
-              <a href="https://twitter.com/">
-                <li class="social-network">
-                  <img src="./img/twitter.png" alt="Twitter" />
-                </li>
-              </a>
-              <a href="https://www.linkedin.com/">
-                <li class="social-network">
-                  <img src="./img/linkedin.png" alt="Linkedin" />
-                </li>
-              </a>
+              <li
+                onclick="goToInstagram()"
+                id="instagram"
+                class="social-network"
+              >
+                <img src="./img/instagram.png" alt="Instagram" />
+              </li>
+              <li onclick="goToFacebook()" id="facebook" class="social-network">
+                <img src="./img/facebook.png" alt="Facebook" />
+              </li>
+              <li onclick="goToTwitter()" id="twitter" class="social-network">
+                <img src="./img/twitter.png" alt="Twitter" />
+              </li>
+              <li onclick="goToLinkedin()" id="linkedin" class="social-network">
+                <img src="./img/linkedin.png" alt="Linkedin" />
+              </li>
             </ul>
           </div>
         </div>
