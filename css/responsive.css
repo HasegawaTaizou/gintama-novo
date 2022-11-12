@@ -1,30 +1,7 @@
 /* DESKTOP */
-@media (max-width: 1500px) {
-  .character__image {
-    width: 250px;
-    height: 250px;
-  }
-
-  .quotes-container {
-    margin: 0px 25px;
-  }
-}
-
 @media (max-width: 1380px) {
   .navigation-container {
     gap: 16px;
-  }
-
-  .about__content {
-    padding: 0px 30px;
-  }
-
-  .characters-container {
-    gap: 32px;
-  }
-
-  .topics-container {
-    margin: 0px 25px;
   }
 }
 
@@ -33,7 +10,6 @@
   header {
     padding-left: 24px;
     padding-right: 24px;
-    justify-content: center;
   }
 
   #header__logo {
@@ -43,197 +19,11 @@
   .navigation-container {
     gap: 32px;
   }
-
-  .banner-quote-container-shinpachi .banner-quote {
-    font-size: 1.75rem;
-    margin: 0px 25px;
-  }
-
-  .about {
-    grid-template-areas:
-      "title"
-      "content";
-    grid-template-rows: auto 1fr;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about__title {
-    grid-area: title;
-  }
-
-  .about__content {
-    grid-area: content;
-    display: grid;
-    grid-template-areas:
-      "history-and-opinion"
-      "categories";
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .images__images {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .characters-container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .character__image {
-    width: 450px;
-    height: 450px;
-  }
-
-  .character__text {
-    max-width: 700px;
-    font-size: 1.5rem;
-  }
-
-  .hasegawa {
-    display: grid;
-    grid-template-areas:
-      "title"
-      "about"
-      "images";
-    justify-items: center;
-    align-items: center;
-  }
-
-  .hasegawa-no-mobile__title {
-    grid-area: title;
-    font-size: 2.75rem;
-  }
-
-  .hasegawa__about {
-    grid-area: about;
-  }
-
-  .hasegawa__images {
-    grid-area: images;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .quotes__title {
-    margin-bottom: 30px;
-  }
-
-  .quotes-container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .quote {
-    max-width: 400px;
-  }
-
-  .quote__text {
-    font-size: 1.75rem;
-  }
-
-  .quote__author {
-    font-size: 2.25rem;
-  }
-
-  .informations {
-    display: grid;
-    grid-template-areas:
-      "title"
-      "content";
-  }
-
-  .informations__title {
-    grid-area: title;
-  }
-
-  .topics-container {
-    grid-area: content;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .topic-why-gintama {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-  }
-
-  .topic-contact {
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .topic-watch {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
-  }
-
-  .social-networks-container {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 16px;
-    justify-content: end;
-  }
-
-  .topic-contact-container .topic__text {
-    text-align: end;
-  }
-
-  .topic-contact .topic__title {
-    display: grid;
-    justify-content: end;
-  }
-
-  .topic-contact .topic__title::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid #fedc00;
-    width: 35px;
-    margin: 10px 0px 8px auto;
-  }
-
-  .topic-social-networks .topic__title {
-    display: grid;
-    justify-content: end;
-  }
-
-  .topic-social-networks .topic__title::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid #fedc00;
-    width: 35px;
-    margin: 10px 0px 8px auto;
-  }
 }
 
 @media (max-width: 1110px) {
   .navigation-container {
-    gap: 16px;
-  }
-
-  .banner-no-mobile__title {
-    font-size: 6rem;
-  }
-
-  .hasegawa-no-mobile__title {
-    font-size: 2.25rem;
-  }
-
-  .hasegawa__text {
-    font-size: 1.5rem;
-    margin: 0px 25px;
+    font-size: 1.15rem;
   }
 }
 
@@ -247,13 +37,13 @@
 @media (max-width: 850px) {
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
     height: 100px;
   }
 
   #header__logo {
-    display: block;
+    display: block !important;
     width: 64px;
     height: 64px;
   }
@@ -266,208 +56,15 @@
     display: block;
     font-size: 3rem;
   }
-
-  .banner-no-mobile__title {
-    font-size: 5rem;
-  }
-
-  .banner-quote-container-shinpachi {
-    display: none;
-  }
-
-  .banner-quote-container-gintoki {
-    display: block;
-  }
-
-  .banner-quote-container-gintoki .banner-quote {
-    font-size: 2.25rem;
-  }
-
-  .banner-quote-container-gintoki .banner-quote__author {
-    text-align: center;
-    font-size: 2.75rem;
-  }
-
-  .banner-quote__button {
-    display: none;
-  }
-
-  .categories {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section-images img {
-    width: 400px;
-  }
-
-  .character__image {
-    width: 300px;
-    height: 300px;
-  }
-
-  .character__text {
-    max-width: 300px;
-    font-size: 1.25rem;
-  }
-
-  .hasegawa-no-mobile__title {
-    display: none;
-  }
-
-  .hasegawa-mobile__title {
-    display: block;
-  }
-
-  .hasegawa img {
-    width: 400px;
-  }
-
-  .quote:nth-child(2) {
-    display: none;
-  }
-
-  .quote:nth-child(3) {
-    display: block;
-  }
-
-  .topics-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .topic-why-gintama {
-    display: grid;
-    justify-items: center;
-  }
-
-  .topic-watch__content {
-    display: grid;
-    justify-items: center;
-    gap: 12px;
-  }
-
-  .topic-contact {
-    display: grid;
-    justify-items: center;
-  }
-
-  .topic-contact .topic__title {
-    display: block;
-  }
-
-  .topic-contact .topic__title::after {
-    margin: 10px auto 8px auto;
-  }
-
-  .topic-contact-container .topic__text {
-    text-align: center;
-  }
-
-  .topic-social-networks .topic__title {
-    display: block;
-    text-align: center;
-  }
-
-  .topic-social-networks .topic__title::after {
-    margin: 10px auto 8px auto;
-  }
-
-  .social-networks-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .topic__title {
-    display: grid;
-    justify-items: center;
-  }
-
-  .topic__title::after {
-    margin: 10px auto 8px auto;
-  }
-
-  .topic__text {
-    text-align: center;
-  }
-}
-
-@media (max-width: 670px) {
-  .banner-no-mobile__title {
-    display: none;
-  }
-
-  .banner-mobile__title-container {
-    display: grid;
-    justify-items: center;
-    font-size: 4rem;
-  }
-
-  .banner-quote {
-    font-size: 1.75rem;
-  }
-
-  .banner-quote__author {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 600px) {
-  .characters__title {
-    font-size: 2rem;
-  }
-
-  .quote__text {
-    font-size: 1.5rem;
-  }
-
-  .quote__author {
-    font-size: 2rem;
-  }
-
-  .history-and-opinion__text {
-    margin: 0px 25px;
-  }
-
   footer {
     font-size: 0.75rem;
   }
 }
 
 @media (max-width: 490px) {
-  .banner-mobile__title-container {
-    font-size: 3rem;
-  }
-
-  .banner-quote {
-    font-size: 1rem;
-  }
-
-  .banner-quote__author {
-    font-size: 1.5rem;
-  }
-
-  .section-images img {
-    width: 250px;
-  }
-
-  .characters__title {
-    font-size: 2rem;
-  }
-
-  .hasegawa img {
-    width: 250px;
-  }
-
-  .hasegawa-mobile__title {
-    font-size: 2rem;
-  }
-
-  .quote__text {
-    margin: 0px 25px;
-  }
-
   footer {
     font-size: 0.5rem;
   }
@@ -486,63 +83,6 @@
   #icon-full-menu {
     display: block;
     font-size: 2rem;
-  }
-
-  .banner-mobile__title-container {
-    font-size: 2rem;
-  }
-  .banner-quote {
-    font-size: 0.75rem;
-    margin: 0px 25px;
-  }
-
-  .banner-quote__author {
-    font-size: 1rem;
-  }
-
-  .characters__title {
-    font-size: 2rem;
-  }
-
-  .hasegawa-mobile__title {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 370px) {
-  .characters__title {
-    font-size: 1.75rem;
-  }
-
-  .history-and-opinion__title {
-    font-size: 1.5rem;
-  }
-
-  .hasegawa-mobile__title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 340px) {
-  .characters__title {
-    font-size: 1.5rem;
-  }
-
-  .character__image {
-    width: 250px;
-    height: 250px;
-  }
-
-  .hasegawa-no-mobile__title {
-    font-size: 1.75rem;
-  }
-
-  .informations__title {
-    font-size: 2.25rem;
-  }
-
-  .topic-why-gintama .topic__text {
-    margin: 0px 25px;
   }
 }
 

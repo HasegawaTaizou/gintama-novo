@@ -18,17 +18,6 @@ header {
   align-items: center;
 }
 
-main {
-  grid-area: content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-section {
-  width: 100%;
-}
-
 #header__logo:hover {
   cursor: pointer;
 }
@@ -70,6 +59,17 @@ section {
 
 .closebtn {
   display: none;
+}
+
+main {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
 }
 
 footer {
