@@ -1,8 +1,14 @@
+# DS1M - A - Caio Palermo Lemos
+
+---
+
 # Portfólio
 
 ![Screenshot](screenshot.PNG)
 
-[Clique aqui](https://hasegawataizou.github.io/portfolio-junto/) para acessar o site
+[Clique aqui](hasegawataizou.github.io/one-page-2022/) para visitar o site.
+
+---
 
 ## Sobre
 Site do tipo one page para mostrar o meu anime favorito chamado "Gintama".
@@ -33,6 +39,7 @@ O LightHouse basicamente analisa todo o seu site, indicando como está determina
 
 ![Report](report.PNG)
 
+---
 ## Desing
 O Layout deste site foi baseado no Figma. Segue o link:
 
