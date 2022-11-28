@@ -91,6 +91,7 @@
   background-color: #000;
   width: 150px;
   height: 50px;
+  user-select: none;
 }
 
 .category__title {
